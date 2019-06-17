@@ -1,0 +1,15 @@
+numpy>=1.11
+scipy>=0.17.0
+matplotlib>=2.0.0
+scikit-learn
+Pillow>=4.3.0
+scikit-image
+keras
+theano
+tensorflow
+tkinter
+Tcl
+PyQt>=5.0.0
+kivy
+opencv2
+
