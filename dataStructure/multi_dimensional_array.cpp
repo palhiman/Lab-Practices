@@ -4,14 +4,29 @@ using namespace std;
 int main()
 {
 	//Array declaration and initialization
-	int arr[3]5[5] = {{5,12,17,9,3},{13,4,8,14,1},{9,6,3,7,15}};
-
-	//iterate over the array
+	int arr[3][5][3];
+	//take input from the user
 	for(int i=0; i<3; ++i)
 	{
 		for(int j=0; j<5; ++j)
 		{
-			cout << arr[i][j] ;
+			for(int k=0; k<3; ++k)
+			{
+				cin >> arr[i][j][k];
+			}
+		}
+	}
+
+	//iterate through the 3-D array
+	for(int i=0; i<3; i++)
+	{
+		for(int j=0; j<5; ++j)
+		{
+			for(int k=0; k<3; ++k)
+			{
+				cout << arr[i][j][k] << " " ;
+			}
+			cout << endl;
 		}
 		cout << endl;
 	}
