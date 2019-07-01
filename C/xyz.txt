@@ -1,0 +1,11 @@
+Basic probability rules and models
+
+Probability gives the information about how likely an event can occur. Digging into the terminology of the probability: 
+
+Trial or Experiment: The act that leads to a result with certain possibility.
+Sample space: The set of all possible outcomes of an experiment.
+Event: Non empty subset of sample space is known as event.
+
+So in technical terms, probability is the measure of how likely an event is when an experiment is conducted.
+
+
