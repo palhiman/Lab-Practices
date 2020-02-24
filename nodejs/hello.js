@@ -10,4 +10,4 @@ http.createServer((request, response) => {
 	response.end();	// tells the server to close all the response headers
 
 
-}).listen(3500); // tells the server what port to be on
+}).listen(process.env.PORT); // tells the server what port to be on
