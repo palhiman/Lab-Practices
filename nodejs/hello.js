@@ -1,17 +1,13 @@
-const http = require('http');
+const http = require('http');	// loads the http module
 
-const hostname = "127.0.0.5";
-const port = 3500;
+http.createServer((request, response) => {
+	response.writeHead(200, {
+		'Content-Type':'text/plain'
+	}); // this tells browser everything is OK with the status code
 
-const server = http.createServer((req, res) => {
-	res.StatusCode=200;
-	res.setHeader('Content-Type', 'text/plain');
-	res.end('Hello Himanshu. Welcome to the server created by Nodejs.\n')
-});
+	response.write('Hello, Himanshu !!!\n'); // Write the text to the body of page
 
-server.listen(port, hostname, () => {
-	console.log('Server running at http://${hostname}:${port}/');
-});
+	response.end();	// tells the server to close all the response headers
 
 
-
+}).listen(3500); // tells the server what port to be on
