@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Hello World
+        </title>
+    </head>
+    <body>
+        <h2> How to access a FORM elements.</h2>
+        
+        <form id="myForm">
+            Enter 1st value: <input type="number" name="value1" value="123" id="first"><br>
+            <br>
+            Enter 2nd value: <input type="number" name="value2" value="456" id="second"><br><br>
+            <!--<input type="submit" value="SUBMIT"><br>-->
+        </form>
+        <div>
+            <button onclick="addtion()">Addition</button><br>
+            <button onclick="subtraction()">Subtraction</button>
+        </div>
+        
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="sum"></p>
+        <script>
+            var x = document.getElementById("first").value;
+            var y = document.getElementById("second").value;
+            var sum = x + y;
+            document.getElementById("demo1").innerHTML = x;
+            document.getElementById("demo2").innerHTML = y;
+            document.getElementById("sum").innerHTML = sum;
+        </script>
+    </body>
+</html>
