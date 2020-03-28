@@ -1,19 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quick Quiz</title>
-    <link rel="stylesheet" href="app.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="home" class="flex-center flex-column">
-        <h1>Quick Quiz</h1>
-        <a class="btn" href="/website/forms/game.html">Play</a>
-        <a class="btn" href="/website/forms/highscores.html">High Scores</a>
-      </div>
-    </div>
-  </body>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>FORMS</title>
+    </head>
+    <body>
+        <h1>Different kind of Form inputs:</h1>
+        <hr>
+        <form action="">
+            <fieldset>
+                <legend>Radio buttons</legend>
+                <p>
+                    <input type="radio" name="radPrice" id="rad100" value="100">GOOGLE
+                </p>
+                <P>
+                    <input type="radio" name="radPrice" id="rad200" value="200">Bing
+                </P>
+            </fieldset>
+            <fieldset>
+                <legend>input-style-button</legend>
+                <input type="button" value="button input type">
+                <input type="submit">
+                <input type="reset">
+            </fieldset>
+            <fieldset>
+                <legend>Button tage buttons</legend>
+                <button type="button">Button tag</button>
+                <button>
+                    <img src="clickMe.gif" alt="click me">
+                </button>
+            </fieldset>
+            <fieldset>
+                <legend>Date input</legend>
+                <input type="date" id="date">
+            </fieldset>
+            <fieldset>
+                <legend>Colors</legend>
+                <input type="color" id="color">
+            </fieldset>
+            <fieldset>
+                <legend>Date & Time</legend>
+                <input type="datetime" id="datetime">
+            </fieldset>
+            <fieldset>
+                <legend>date time local</legend>
+                <input type="datetime-local" id="datetimelocal">
+            </fieldset>
+            <fieldset>
+                <legend>Week-month</legend>
+                <input type="week" id="week">
+                <input type="month" id="month">
+            </fieldset>
+            <fieldset>
+                <legend>Numbers</legend>
+                <input type="number" id="number" max="100" min="1">
+            </fieldset>
+            <fieldset>
+                <legend>range</legend>
+                <input type="range" id="range" min="0" max="255" value="128">
+            </fieldset>
+            <fieldset>
+                <legend>Search</legend>
+                <input type="search" id="search">
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" id="emai" placeholder="somthing@email.com">
+            </fieldset>
+            <fieldset>
+                <legend>Telephone</legend>
+                <input type="tel" id="tel" placeholder="022-2323223">
+            </fieldset>
+            <fieldset>
+                <legend>URL</legend>
+                <input type="url" id="url" placeholder="https://example.com/">
+            </fieldset>
+        </form>
+    </body>
 </html>
