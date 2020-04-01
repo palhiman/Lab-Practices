@@ -4,3 +4,12 @@ ml/analyticVidhya/twitter/etc/*
 ml/analyticVidhya/twitter/lib/*
 ml/analyticVidhya/twitter/include/*
 ml/analyticVidhya/twitter/share/*
+
+ml/COVID19/covid/bin/*
+ml/COVID19/covid/etc/*
+ml/COVID19/covid/lib/*
+ml/COVID19/covid/include/*
+ml/COVID19/covid/share/*
+ml/COVID19/covid/lib64
+ml/COVID19/covid/pyvenvcfg
+ml/COVID19/.ropeproject/*
