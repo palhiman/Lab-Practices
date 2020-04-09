@@ -1,0 +1,108 @@
+"**************************************
+" himanshu shekhar's vim configuration
+"**************************************
+
+"set compatibility to Vim only
+set nocompatible
+
+" Helps force plug-ins to load correctly when it is turned back on below.
+filetype off
+
+" Turn on syntax highlighting
+syntax on	
+
+" For plug-ins to load correctly
+filetype plugin indent on
+
+" Turn off modelines
+set modelines=0
+
+" Turnoff wrap text that extends beyond the screen length.
+set nowrap
+
+" Default encoding
+set encoding=utf8
+
+" Vim's auto indentation feature does not work properly with text copied  from outside of Vim. Press the <F2> key to toggle paste mode on/off.
+nnoremap <F2> :set invpaste paste?<CR>
+imap <F2> <C-O>:set invpaste paste?<CR>
+set pastetoggle=<F2>
+
+set textwidth=79
+set formatoptions=tcqrn1
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
+
+" Display 5 lines above/below the cursor when scrolling with a mouse.
+set scrolloff=7
+
+" Fixes common backspace problems
+set backspace=indent,eol,start
+
+" Status bar
+set laststatus=2
+
+" Display options
+set showmode
+set showcmd
+
+" Highlight matching pairs of brackets. 
+" "%" to jum between them.
+set matchpairs+=<:>
+
+" Set status line display
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+" Highlight matching search patterns
+set hlsearch
+
+" Incremental search
+set incsearch
+
+" set ignorecase
+" set smartcase
+"
+
+" Map the <Space> key to toggle a selected fold opened/closed
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
+
+" using vim-plug to install various plugins
+call plug#begin()
+	Plug 'turbio/bracey.vim'
+	Plug 'valloric/youcompleteme'
+	Plug 'mattn/emmet-vim'
+	Plug 'honza/vim-snippets'
+	Plug 'alvan/vim-closetag'
+	Plug 'raimondi/delimitmate'
+	Plug 'davidhalter/jedi-vim'
+	Plug 'scrooloose/syntastic'
+	Plug 'pangloss/vim-javascript'
+	Plug 'plasticboy/vim-markdown'
+	Plug 'sheerun/vim-polyglot'
+	Plug 'othree/html5.vim'
+	Plug 'vim-syntastic/syntastic'
+	Plug 'nvie/vim-flake8'
+	Plug 'klen/python-mode'
+	Plug 'hynek/vim-python-pep8-indent'
+	Plug 'tpope/vim-fugitive'
+	Plug 'scrooloose/nerdtree'
+	Plug 'nvie/vim-flake8'
+	Plug 'janko-m/vim-test'
+	Plug 'airblade/vim-gitgutter'
+	Plug 'vim-airline/vim-airline'
+	Plug 'ctrlpvim/ctrlp.vim'
+	Plug 'tpope/vim-surround'
+call plug#end()
+
+" Show line numbers
+set number
+set ruler
+
+"#########################
+" Mapping configuration
+"########################
+map <C-n> :NERDTreeToggle<CR>
