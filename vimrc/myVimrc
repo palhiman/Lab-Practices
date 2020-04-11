@@ -1,6 +1,8 @@
 "**************************************
 " himanshu shekhar's vim configuration
 "**************************************
+" To install vim plugin manager i.e. vim-plug.
+" $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 "set compatibility to Vim only
 set nocompatible
