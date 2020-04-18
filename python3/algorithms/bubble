@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+# Implementing Bubble sort
+# 
+
+def bubbleSort(array):
+    n = len(array)  # length of the array
+
+    for i in range(n):
+        for j in range(n-i-1):
+            already_sorted = True
+
+            if array[j] > array[j+1]:
+                array[j], array[j+1] = array[j+1], array[j]
+
+                already_sorted = False
+
+        if already_sorted:
+            break
+
+    return array
+
