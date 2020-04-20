@@ -1,0 +1,4 @@
+#1. To disable webcam 
+>>> sudo modprobe -r uvcvideo
+#2. To enable it again
+>>> sudo modprobe uvcvideo
