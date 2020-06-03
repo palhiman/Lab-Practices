@@ -1,0 +1,31 @@
+#!/bin/bash
+# Script to open all NCERT Maths books from VI to XII.
+# To open the folder of class VI, type 'Maths 6' similarly for others.
+# Written by: Himanshu Shekhar
+
+if [ "$1" == "6" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/VI/Maths/
+elif [ "$1" == "7" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/VII/Maths/
+elif [ "$1" == "8" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/VIII/Maths/
+elif [ "$1" == "9" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/IX/Maths/
+elif [ "$1" == "10" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/X/Maths/
+elif [ "$1" == "11" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/XI/Maths/
+elif [ "$1" == "12" ]
+then
+  /usr/bin/gnome-open ~/Downloads/NCERT\ books/ncert/XII/Maths/
+else
+  echo "Enter Arguments between 6 to 12"
+fi
+
+
